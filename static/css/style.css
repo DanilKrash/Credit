@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: block;
+    background-color: #f6f6f6;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+h1{
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    font-size: 28px;
+    margin: 20px;
+}
+
+.wraper{
+    height: 100%;
+    box-sizing: border-box;
+    min-height: calc(100vh - 80px);
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    height: 100%;
+}
+
+/*Главная*/
+
+.blocks{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.block-info{
+    background-color: #d7d7d7;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    transition: ease 1s;
+}
+
+.footer_block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-info:hover{
+    background-color: #eaeaea;
+    padding: 30px;
+}
+
+/*Контакты*/
+
+.contact_info{
+    background-color: #7c7c7c;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.telefon{
+    background-color: #494949;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.telefon_info{
+    display: flex;
+}
+
+.rekvisit{
+    display: flex;
+    align-items: center;
+}
+
+/*Аутентификация*/
+
+.helptext, ul{
+    display: none;
+}
+
+.errorlist {
+    display: block;
+}

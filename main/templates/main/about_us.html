@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block title %} <title>О нас</title> {% endblock %}
+
+{% block content %}
+    <div class="content">
+        <div class="contact_info">
+            <h1 style="color: white">Контакты</h1>
+            <p style="width: 800px; color: white">В случае чего — мы обязательно поможем. По телефону, электронной
+                почте, в соцсетях и мессенджерах. Ниже вы
+                легко найдёте контакт, связанный с вашим вопросом.</p>
+            <div class="telefon">
+                <div class="telefon_info">
+                    <div>
+                        <h1 style="color: white">Служба заботы о клиентах</h1>
+                        <p style="color: white; width: 600px; margin-right: 20px">Ответим на любой вопрос, связанный с
+                            работой сайта, и проконсультируем по услугам и предложениям. Звоните или пишите на
+                            creditor@mail.ru</p>
+                    </div>
+                    <img src="{% static 'img/contact-telefon.png' %}" alt="">
+                </div>
+            </div>
+
+            <hr style="background: white">
+
+            <div class="rekvisit">
+                <div>
+                    <h1 style="color: white">Реквизиты и адрес</h1>
+                    <p style="color: white">ООО «Кредитор» <br>
+                        ОГРН 1087756642774 <br>
+                        Юридический и фактический адрес: <br>
+                        108544, г. Курган, солнечный бульвар, <br>
+                        дом 6, 5 этаж <br>
+                        График работы: <br>
+                        с понедельника по субботу <br>
+                        с 8 до 22 часов по курганскому времени</p>
+                </div>
+                <iframe style="border-radius: 20px" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aacebf78fb36bf9faf80e3de13f15d91907174cda2a8f2f3c5c17926559ffb8d4&amp;source=constructor"
+                        width="600" height="400" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+{% endblock %}

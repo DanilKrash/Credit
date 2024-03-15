@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}<title>Изменение статуса заявки</title>{% endblock %}
+
+{% block content %}
+        <form method="post" action="{% url 'applic:change_status' applic.id %}">
+            {% csrf_token %}
+            <label for="status">Изменить статус:</label>
+            <label>
+                <select class="form-select" name="status">
+                    {% for status, _ in applic.Status.choices %}
+                        <option value="{{ status }}" {% if applic.status == status %}selected{% endif %}>{{ status }}</option>
+                    {% endfor %}
+                </select>
+            </label>
+            <button class="btn btn-primary" type="submit">Изменить</button>
+        </form>
+{% endblock %}

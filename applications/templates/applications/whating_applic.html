@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block title %} <title>Ваши заявки</title> {% endblock %}
+
+{% block content %}
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Сумма</th>
+            <th scope="col">Цель кредита</th>
+            <th scope="col">Статус</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in applic %}
+            <tr>
+                <th scope="row">{{ item.id }}</th>
+                <td>{{ item.price }}</td>
+                <td>{{ item.purpose }}</td>
+                <td>
+                    {{ item.get_status_display }}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

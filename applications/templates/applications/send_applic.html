@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block title %} <title>Взять кредит</title> {% endblock %}
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" class="btn btn-primary" value="Отправить">
+    </form>
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+
+{% block title %}<title>Главная</title>{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <h1>Помогаем в трудный момент жизни!</h1>
+        <div class="blocks">
+            <div class="block-info">
+                <p style="font-weight: 700; margin-bottom: 0">Займы</p>
+                <p style="opacity: 60%">На карту за 10 минут</p>
+                <div class="footer_block">
+                    <p style="background: #4c0bce; font-size: 15px; border-radius: 10px; padding: 0 3px 0 3px; width: max-content; color: white; margin-bottom: 0">
+                        от 0%</p>
+                    <i class="bi bi-credit-card"></i>
+                </div>
+            </div>
+
+            <div class="block-info">
+                <p style="font-weight: 700; margin-bottom: 0">Страхование ипотеки</p>
+                <p style="opacity: 60%">Страховка для банка</p>
+                <div class="footer_block">
+                    <p style="background: #4c0bce; font-size: 15px; border-radius: 10px; padding: 0 3px 0 3px; width: max-content; color: white; margin-bottom: 0">
+                        приз 500 000 руб.</p>
+                    <i class="bi bi-bank"></i>
+                </div>
+            </div>
+
+            <div class="block-info">
+                <p style="font-weight: 700; margin-bottom: 0">Вклады</p>
+                <p style="opacity: 60%">Найдите лучшую ставку</p>
+                <div style="justify-content: flex-end" class="footer_block">
+                    <i class="bi bi-safe"></i>
+                </div>
+            </div>
+
+            <div class="block-info">
+                <p style="font-weight: 700; margin-bottom: 0">Ипотека</p>
+                <p style="opacity: 60%">Одна заявка в 9 банков</p>
+                <div style="justify-content: flex-end" class="footer_block">
+                    <i class="bi bi-house"></i>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; justify-content: space-between" class="block-info">
+                <p style="font-weight: 700; margin-bottom: 0">Туристическая страховка</p>
+                <div style="justify-content: flex-end" class="footer_block">
+                    <i class="bi bi-airplane"></i>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; justify-content: space-between" class="block-info">
+                <p style="font-weight: 700; margin-bottom: 0">Страхование спортсменов</p>
+                <div style="justify-content: flex-end" class="footer_block">
+                    <i class="bi bi-trophy"></i>
+                </div>
+            </div>
+        </div>
+        <a type="button" href="{% url 'applic:send_applic' %}" class="btn btn-outline-primary">Взять кредит</a>
+    </div>
+{% endblock %}

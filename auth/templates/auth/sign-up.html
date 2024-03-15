@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block title %} <title>Регистрация</title> {% endblock %}
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {% for field in form %}
+            <p class="col-sm-2 col-form-label">
+                <label for="{{ field.auto_id }}" class="form_control">{{ field.label }}</label>
+                {{ field }}
+            </p>
+        {% endfor %}
+        <input type="submit" class="btn btn-primary" value="Создать">
+    </form>
+{% endblock %}
